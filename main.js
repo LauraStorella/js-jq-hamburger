@@ -3,15 +3,15 @@ Aggiungere la funzionalità di apertura/chiusura del menu all’hamburger menu(v
 */
 
 // Funzionalità di apertura hamburger menu
-$('.header-right a:last-child i').click(
+$('.header-right a:last-child').click(
   function() {
-    $('.hamburger-menu').addClass('close');
+    $('.hamburger-menu').addClass('active');
   }
 );
 
 // Funzionalità di chiusura hamburger menu
-$('a.close i').click(
+$('a.close').click(
   function() {
-    $('.hamburger-menu').removeClass('close');
+    $('.hamburger-menu').removeClass('active');
   }
 );
